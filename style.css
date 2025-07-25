@@ -182,6 +182,58 @@
   cursor: pointer;
 }
 
+/* ========== Feature Section ========== */
+.feature-section {
+  padding: 60px 20px;
+}
+
+.feature-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.feature-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Content */
+.feature-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.feature-content h2 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.feature-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.feature-list li {
+  font-size: 20px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+
 
 
 
@@ -296,5 +348,24 @@
 
   .plant-description {
     font-size: 16px;
+  }
+}
+
+/* fetured image Responsive */
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .feature-content h2 {
+    font-size: 40px;
+  }
+
+  .feature-list li {
+    font-size: 20px;
+    padding-left: 10px;
+    padding: 10px;
   }
 }
