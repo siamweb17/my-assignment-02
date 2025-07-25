@@ -402,7 +402,85 @@
   cursor: pointer; 
 }
 
+/* footer */
+/* ===== Footer Main ===== */
+.site-footer {
+  color: #000000;
+  padding: 60px 20px; 
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Logo & Text ===== */
+.footer-logo-section {
+  max-width: 300px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-size: 18px;
+  color: #707070;
+  line-height: 1.5;
+}
+
+/* ===== Middle: Links ===== */
+.footer-links {
+  display: flex;
+  gap: 150px;
+}
+
+.footer-column {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 30px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #6d6d6d;
+  font-size: 16px;
+  
+}
+
+ 
+
+/* Column 2: No link effects */
+.footer-column.plain li {
+  color: #6d6d6d;
+  font-size: 16px;
+  cursor: default;
+}
+ 
+
+/* ===== Right: Icons ===== */
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer; 
+}
+ 
 
 
 
@@ -592,5 +670,26 @@
 
   .subscribe-form button {
     white-space: nowrap;
+  }
+}
+
+
+
+/* footer */
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .footer-icons {
+    margin-top: 20px;
   }
 }
