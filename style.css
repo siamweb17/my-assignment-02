@@ -353,6 +353,56 @@
 }
 
 
+/* email */
+/* ===== Subscribe Section ===== */
+.subscribe-section {
+  background-image: url('pic/news-letter-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+/* Overlay for slight dark effect */
+.subscribe-overlay {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 0 auto; 
+}
+
+.subscribe-heading {
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+
+/* ===== Form Styles ===== */
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 12px 16px; 
+  border: none;
+  font-size: 16px;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.subscribe-form button {
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+
 
 
 
@@ -522,3 +572,25 @@
   }
 }
 
+/* email */
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+  .subscribe-form {
+    flex-direction: row; 
+    flex-wrap: nowrap;
+
+  }
+  .subscribe-overlay h2 {
+    font-size: 28px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .subscribe-form button {
+    white-space: nowrap;
+  }
+}
