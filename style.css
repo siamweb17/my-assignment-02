@@ -110,6 +110,80 @@
 }
 
 
+/* ========= Plant Section ========== */
+.plant-section {
+  background-color: #fefefe;
+  padding: 50px 20px;
+}
+
+.plant-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plant-heading {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.plant-heading .highlight {
+  color: #E95A08;
+}
+
+.plant-heading .second {
+  color: #000000;
+}
+
+.plant-description {
+  font-size: 18px;
+  color: #a0a0a0;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ========= Plant Card ========== */
+ 
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+  margin-bottom: 15px;
+}
+
+.plant-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.plant-card p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.plant-card button {
+  background-color: #E95A08;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+
+
 
 
 
@@ -194,3 +268,33 @@
   }
 }
 
+/* ========== Responsive Grid ========== */
+@media (max-width: 992px) {
+  .plant-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .plant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plant-card {
+    padding: 16px;
+  }
+
+  .plant-heading {
+    font-size: 28px;
+  }
+
+  .plant-description {
+    font-size: 16px;
+  }
+}
