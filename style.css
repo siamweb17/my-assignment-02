@@ -233,6 +233,127 @@
   margin-bottom: 10px;
 }
 
+/* Section structure as before */
+.promo-section {
+  padding: 60px 20px;
+}
+
+.promo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.promo-header {
+  margin-bottom: 40px;
+}
+.promo-heading {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.promo-heading .highlight {
+  color: #E95A08;
+}
+
+.promo-heading .second {
+  color: #000;
+}
+.promo-title {
+  font-size: 36px;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.promo-subtext {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.promo-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+.promo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.promo-right {
+  height: 100%;
+}
+
+/* Card Styles */
+.promo-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.promo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay Centered */
+.promo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.4);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.promo-overlay.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-overlay p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.promo-overlay a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.promo-overlay a:hover {
+  color: #f4f4f4;
+}
+
+/* Height Logic */
+.promo-left .promo-card {
+  height: calc((100% - 30px) / 2);
+}
+
+.promo-right .promo-card.big {
+  height: 100%;
+}
+
+
+
 
 
 
@@ -369,3 +490,35 @@
     padding: 10px;
   }
 }
+
+
+/* grid responsive */
+/* Responsive */
+@media (max-width: 576px) {
+  .promo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-left {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .promo-left .promo-card,
+  .promo-right .promo-card {
+    height: 250px;
+  }
+
+  .promo-right {
+    margin-top: 20px;
+  }
+
+  .promo-title {
+    font-size: 28px;
+  }
+
+  .promo-subtext {
+    font-size: 16px;
+  }
+}
+
